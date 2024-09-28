@@ -64,7 +64,7 @@ class SentimentAnalysisView(APIView):
                 for review in reviews:
                     sentiment_result = analyze_sentiment(review)
                     
-                    print(sentiment_result)
+                    #print(sentiment_result)
                     results.append(sentiment_result)  
 
                 # Print the results
