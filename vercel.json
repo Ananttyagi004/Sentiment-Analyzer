@@ -2,7 +2,11 @@
     "builds": [{
         "src": "sentiment_analyzer/wsgi.py",
         "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.10" }
+        "config": { 
+            "maxLambdaSize": "15mb", 
+            "runtime": "python3.10",
+            "maxDuration": 10  // Set max execution time to 10 seconds
+        }
     }],
     "routes": [
         {
